@@ -14,7 +14,7 @@ pipeline {
 
         stage('SCM Checkout')  {
             steps {
-                git credentialsId: 'githuncredentails', url: 'https://github.com/dscorpian29/spring-jenkins-project.git'
+                git credentialsId: 'githuncredentails', url: 'https://github.com/monisha204/spring-jenkins-project.git'
             }
         } 
 
