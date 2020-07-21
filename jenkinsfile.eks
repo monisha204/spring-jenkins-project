@@ -48,7 +48,8 @@ pipeline {
         steps {
        
         withSonarQubeEnv('sonar123') { // If you have configured more than one global server connection, you can specify its name
-        sh "mvn sonar:sonar"
+        sh "mvn sonar:sonar -Dsonar.projectKey=amit"
+        
       //  sh "${scannerHome}/bin/sonar-scanner"
         }
       }
